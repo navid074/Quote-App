@@ -11,20 +11,26 @@ fetch('https://api.quotable.io/random').then(res => res.json())
     writer.innerHTML = data.author
 })
 
+writer.addEventListener('click' , ()=> {
+    window.location.href = `https://en.wikipedia.org/wiki/${writer.innerHTML}`
+});
+
 read.addEventListener('click', ()=> {
     window.speechSynthesis.speak(new SpeechSynthesisUtterance(text.innerHTML));
 });
 
 copy.addEventListener('click',()=>{
     navigator.clipboard.writeText(text.innerHTML);
-    alert("Copied To Clipboard ! ");
 });
 
 share.addEventListener('click', ()=>{
-    navigator.clipboard.writeText(text.innerHTML);
-    location.replace("https://twitter.com/login")
+    window.location.href=`https://twitter.com/intent/tweet?text=${text.innerHTML}`
 });
 
-newQuote.addEventListener('click',()=>{
-    location.reload();
+newQuote.addEventListener('click',(event)=>{
+    fetch('https://api.quotable.io/random').then(res => res.json())
+    .then(data => {
+        text.innerHTML = data.content
+        writer.innerHTML = data.author
+    })
 });
