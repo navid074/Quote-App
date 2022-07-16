@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:dodgerblue ;
+}
+
+.container {
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 150px 400px;
+    box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+}
+
+.title {
+    margin: 25px 110px;
+    font-size: 35px;
+    padding-top: 25px;
+    white-space: nowrap;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 40px;
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+.writer {
+    padding-left: 300px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.read {
+    border: 2px solid dodgerblue;
+    border-radius: 25px;
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.copy {
+    border: 2px solid dodgerblue;
+    border-radius: 25px;
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.share {
+    border: 2px solid dodgerblue;
+    border-radius: 25px;
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.read:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.share:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.copy:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.new {
+    border: 2px solid dodgerblue;
+    border-radius: 25px;
+    width: 100px;
+    height: 25px;
+    margin-left: 180px;
+    margin-top: 30px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    width: 450px;
+    margin-left: 25px;
+}
